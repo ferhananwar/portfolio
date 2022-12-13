@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -24,7 +25,8 @@
         <div id="home">
             <div>
                 <h1 class="home-title">Hi, I'm <span class="auto-type"></span></h1>
-                <h2 class="home-description">A <span id="currentAge"></span> Year Old Computer Science Student at TMU</h2>
+                <h2 class="home-description">A <span id="currentAge"></span> year old Computer Science Graduate from Toronto Metropolitan University</h2>
+                <!--<h2 class="home-description"><span></span>from Toronto Metropolitan University</h2><-->
                 <div class="home-button">
                     <button class="generic-button" onclick=`${window.location.href="#about"}`>View More</button>
                 </div>
@@ -171,14 +173,14 @@
 
 <script>
     let currentYear = new Date().getFullYear();
-    let birthYear = 2001;
+    let birthYear = 2000;
 
     document.getElementById("currentAge").innerHTML = currentYear - birthYear;
 
     let typed = new Typed('.auto-type', {
-        strings: ["^500Ferhan Anwar^1000", "^500a Frontend Developer^1000", "^500him^1000"],
-        typeSpeed: 90,
-        backSpeed: 90,
+        strings: ["^300Ferhan Anwar^300", "^300a Frontend Developer^300", "^300a UI/UX Designer^300", "^300him^300"],
+        typeSpeed: 40,
+        backSpeed: 40,
         loop: true,
         showCursor: false,
     });
