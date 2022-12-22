@@ -55,12 +55,11 @@ html {
 }
 
 /* HOME */
-
 #home {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 100vh;
 }
 
 .home-title {
@@ -103,10 +102,11 @@ html {
     background-color: #8f86d9;
 }
 
+/* About page section */
 .content {
     width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -117,7 +117,7 @@ html {
 
 .content-section-2 {
     flex: 2;
-    padding-left: 30px;
+    padding-left: 60px;
 }
 
 .content-image {
@@ -132,6 +132,7 @@ html {
 }
 
 .content-section-text {
+    font-size: 27px;
     line-height: 30px;
 }
 
@@ -140,9 +141,10 @@ html {
     padding-right: 30px;
 }
 
-/* project section */
+/* Project page section */
 #projects{
     padding-top: 30px;
+    padding-bottom: 60px;
 }
 .project-title {
     font-size: 28px;
