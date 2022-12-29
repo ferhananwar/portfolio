@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-html {
+:root{
+    --body-color: ##f5f5fa;
+    --sidebar-color: #a39ae8;
+}
+
+html{
     margin: 0;
     padding: 0;
     font-family: "Inter", sans-serif;
@@ -10,7 +15,10 @@ html {
     color: #323232;
 }
 
-/* margin/padding: top right bottom left */
+body{
+    height: 100vh;
+    background: var(--body-color);
+}
 
 .container {
     padding: 0 20px;
@@ -18,31 +26,48 @@ html {
     width: 70vw;
 }
 
-/* nav */
+/* menu bar */
+.menu-btn{
+    position: fixed;
+    width: 60px;
+    height: 70px;
+    left: 52px;
+    top: 350px;
+}
 
-.nav-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.menu a:hover{
+    left: 0;
+}
+
+    /* nav */
+
+.sidebar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 20%;
+    padding: 10px 14px;
+    background: var(--sidebar-color);
 }
 
 .nav {
-    padding-left: 10px;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    position: absolute;
+    top: 0;    
+    left: 0;
+    list-style: none;
 }
 
 .nav-item {
-    display: inline;
     margin-top: 20px;
     margin-bottom: 20px;
-    padding: 0 30px;
+    padding: 10px 30px;
 }
 
 .nav-link {
     text-decoration: none;
     color: #323232;
-    font-size: 20px;
+    font-size: 40px;
     font-weight: 500;
 }
 
