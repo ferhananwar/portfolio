@@ -7,23 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
     <script src="script.js"></script>
 </head>
 
-<body>
-    
+<body>        
     <img class="menu-btn" src="./assets/menu.png"/>
-        
-    <nav class="sidebar">
-        <div class="menu-bar">
-            <ul class="nav">
-                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-            </ul>
+    <div class="showNav">
+        <div class="nav">
+            <div class="bar">
+                <ul>
+                    <li><a class="nav-link" href="#home">Home</a></li>
+                    <li><a class="nav-link" href="#about">About</a></li>
+                    <li><a class="nav-link" href="#contact">Contact</a></li>
+                    <li><a class="nav-link" href="#projects">Projects</a></li>
+                </ul>
+            </div>
         </div>
-    </nav>
+    </div>
 
     <div class="container">
 
@@ -46,11 +47,11 @@
                 <h2 class="content-section-title">About Me</h2>
                 <div class="content-section-text">
                     <p>
-                        I’m a junior UI/UX desginer with the aim of crafting experiences users can immerse themselves into.
+                        I’m a junior UI/UX desginer with the aim of crafting memorable experiences users can immerse themselves into.
                         I'm passionate about finding the perfect balance between functionality and aesthetics, while adhering to 
                         business needs for designing apps and websites. 
                     </p>
-                    <a href="./assets/resume.pdf"><button class="generic-button">View Resume</button></a>
+                    <a href="./assets/Resume.pdf"><button class="generic-button">View Resume</button></a>
                 </div>
             </div>
         </div>
@@ -119,7 +120,7 @@
                         <a href=""><button class="generic-button">View Project</button></a>
                     </div>
                 </div>
-                <div class="project-item">
+                <!--<div class="project-item">
                     <div class="project-image-container">
                         <img class="project-image-thumbnail" src="./assets/image2.jpg" />
                     </div>
@@ -138,7 +139,7 @@
                         </div>
                         <a href=""><button class="generic-button">View Project</button></a>
                     </div>
-                </div>
+                </div>-->
             </div>
         </div>
 
@@ -146,25 +147,34 @@
             <div id="contact-rightpadding" class="content-section-2">
                 <h2 class="content-section-title">Contact Me</h2>
                 <div class="content-section-text">
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit est voluptatem quisquam sequi
-                        totam.
-                        Deleniti quidem tempora eaque quo explicabo. Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Quisquam, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit est voluptatem quisquam sequi
-                        totam.
-                        Deleniti quidem tempora eaque quo explicabo. Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Quisquam, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
-                    </p>
+                    <p>Let's get in touch! I'd love the opportunity to connect with you.</p> 
                 </div>
             </div>
             <div class="content-section-1">
-                <img class="content-image" src="./assets/image4.jpg" alt="Richard Marquez" />
+                <div class="button">
+                    <div class="icon"><i class="fab fa-instagram"></i></div>
+                    <span>Instagram</span>
+                </div>
+                <div class="button">
+                    <div class="icon"><i class="fab fa-github"></i></div>
+                    <span>GitHub</span>
+                </div>
+                <div class="button">
+                    <div class="icon"><i class="fab fa-linkedin"></i></div>
+                    <span>LinkedIn</span>
+                </div>
+                <div class="button">
+                    <div class="icon"><i class="fa-regular fa-envelope"></i></div>
+                    <span>Email</span>
+                </div>
+                <div class="button">
+                    <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                    <span>Phone</span>
+                </div>
             </div>
         </div>
     </div>
+    <p id="footer">Copyright © 2022 Developed by Ferhan Anwar | Powered by GitHub </p>
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
@@ -176,11 +186,11 @@
     document.getElementById("currentAge").innerHTML = currentYear - birthYear;
 
     let typed = new Typed('.auto-type', {
-        strings: ["^300Ferhan Anwar^200", "^300a Frontend Developer^200", "^300an UI/UX Designer^300", "^300him^200"],
+        strings: ["^300Ferhan Anwar^10", "^300an UI/UX Designer^10", "^300him^200"],
         typeSpeed: 40,
         backSpeed: 40,
         loop: true,
         showCursor: false,
     });
-</script>
+    </script>
 </html>
