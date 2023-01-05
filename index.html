@@ -26,8 +26,8 @@
         </div>
     </div>
 
+    <img class="me-gif" src="./assets/me.gif"/>
     <div class="container">
-
         <div id="home">
             <div>
                 <h1 class="home-title">Hi, I'm <span class="auto-type"></span></h1>
@@ -151,25 +151,25 @@
                 </div>
             </div>
             <div class="social-media">
-                <div class="button">
+                <div class="button ig">
                     <div class="icon"><i class="fab fa-instagram"></i></div>
-                    <span>Instagram</span>
+                    <a href="https://www.instagram.com/ferhan.anwar/">Instagram</a>
                 </div>
-                <div class="button">
+                <div class="button git">
                     <div class="icon"><i class="fab fa-github"></i></div>
-                    <span>GitHub</span>
+                    <a href="">GitHub</a>
                 </div>
-                <div class="button">
+                <div class="button linkedin">
                     <div class="icon"><i class="fab fa-linkedin"></i></div>
-                    <span>LinkedIn</span>
+                    <a href="https://www.linkedin.com/in/ferhan-a-7227a1114/">LinkedIn</a>
                 </div>
-                <div class="button">
+                <div class="button email" onclick="clip()">
                     <div class="icon"><i class="fa-regular fa-envelope"></i></div>
-                    <span>Email</span>
+                    <span id="linkCopied">Email</span>
                 </div>
-                <div class="button">
+                <div class="button phone">
                     <div class="icon"><i class="fa-solid fa-phone"></i></div>
-                    <span>Phone</span>
+                    <i id="phone">(416)-878-6706</i>
                 </div>
             </div>
         </div>
@@ -192,5 +192,12 @@
         loop: true,
         showCursor: false,
     });
+    function clip(){
+        var email = "frn.awr@gmail.com";
+        navigator.clipboard.writeText(email);
+
+        var copy = document.getElementById("linkCopied");
+        copy.innerHTML = "Link copied!";
+    }
     </script>
 </html>
