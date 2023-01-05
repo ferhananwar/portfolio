@@ -134,11 +134,20 @@ body{
     background-color: #8f86d9;
 }
 
+.me-gif{
+    display: block;
+    z-index: -1;
+    width: 500px;
+    float: right;
+    padding-top: 40px;
+    clip-path: inset(0 70px 0 70px);
+}
+
 /* About page section */
 .content {
     width: 100%;
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 170px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -176,7 +185,7 @@ body{
 /* Project page section */
 #projects{
     padding-top: 30px;
-    padding-bottom: 60px;
+    padding-bottom: 50px;
 }
 .project-title {
     font-size: 28px;
@@ -223,6 +232,7 @@ body{
 }
 
 .social-media .button{
+    position: relative;
     height: 60px;
     width: 60px;
     float: left;
@@ -240,7 +250,7 @@ body{
     height: 60px;
     width: 60px;
     text-align: center;
-    border-radius: 50px;
+    border-radius: 40px;
     box-sizing: border-box;
     line-height: 60px;
     transition: all 0.3s ease-out;
@@ -249,19 +259,121 @@ body{
     font-size: 25px;
     line-height: 60px;
 }
-.social-media .button:hover{
+
+.social-media .button:nth-child(1):hover .icon{
+    background: #4267B2;
+}
+.social-media .button:nth-child(2):hover .icon{
+    background: #4267B2;
+}
+.social-media .button:nth-child(3):hover .icon{
+    background: #4267B2;
+}
+.social-media .button:nth-child(4):hover .icon{
+    background: #4267B2;
+}
+.social-media .button:nth-child(5):hover .icon{
+    background: #4267B2;
+}
+
+.social-media .button.ig:hover{
     width: 200px;
 }
 
-.social-media .button span{
+.social-media > .button.email:hover{
+    width: 200px;
+}
+.social-media > .button.git:hover{
+    width: 160px;
+}
+.social-media .button.phone:hover{
+    width: 220px;
+}
+.social-media .button.linkedin:hover{
+    width: 180px;
+}
+
+.social-media .button a:link, a:visited{
     font-size: 20px;
     font-weight: 500;
     transition: all 0.3s ease-out;
-    line-height: 60px;
-  }
+    text-decoration: none;
+    color:#323232;
+    margin-left: 10px;
+}
+.social-media .button.phone a{
+    margin-left: 1px;
+}
+.social-media .button.git a{
+    margin-left: 5px;
+}
+
+#phone{
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.3s ease-out;
+    text-decoration: none;
+    color:#323232;
+}
+#linkCopied{
+    font-size: 19px;
+    font-weight: 500;
+    transition: all 0.3s ease-out;
+    text-decoration: none;
+    color:#323232;
+    margin-left: 5px;
+}
 
 #footer{
     font-size: 12px;
     padding-bottom: 10px;
     padding-left: 10px;
 }
+
+@media screen and (max-width:990px){
+    #contact .social-media{
+        position: absolute;
+        margin-top: 200px;
+        left: 25vw;
+    }
+    .content ~ #contact{
+        padding-bottom: 50vh;
+    }
+    .home-title {
+        text-align: center;
+        font-size: 50px;
+        margin-bottom: 0px;
+        font-weight: 700;
+    }
+    .home-description {
+        text-align: center;
+        font-size: 15px;
+        font-weight: 500;
+    }
+} 
+
+@media screen and (max-width:750px){
+    .nav-link {
+        display: flex;
+        align-items: center;
+        padding-bottom: 5vw;
+        text-decoration: none;
+        color: #323232;
+        font-size: 2.5vw;
+        font-weight: 500;
+    }
+    .home-title {
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 0px;
+        font-weight: 700;
+    }
+    .home-description {
+        text-align: center;
+        font-size: 12px;
+        font-weight: 500;
+    }
+}
+
+
+
