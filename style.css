@@ -52,7 +52,7 @@ body{
     top: 0;
     left: -25%;
     height: 100%;
-    width: 23%;
+    width: 19%;
     background: var(--sidebar-color);
 }
 .bar{
@@ -61,7 +61,7 @@ body{
     justify-content: space-between;
     height: 100%;
     padding-top: 30px;
-    padding-left: 1.7vw;
+    padding-left: 20px;
 }
 
 .bar li {
@@ -261,19 +261,22 @@ body{
 }
 
 .social-media .button:nth-child(1):hover .icon{
-    background: #4267B2;
+    background: #cd486b;
 }
 .social-media .button:nth-child(2):hover .icon{
-    background: #4267B2;
+    background: #171515;
+    color: white;
 }
 .social-media .button:nth-child(3):hover .icon{
-    background: #4267B2;
+    background: #0072b1;
+    color: white;
 }
 .social-media .button:nth-child(4):hover .icon{
-    background: #4267B2;
+    background: #50a884;
 }
 .social-media .button:nth-child(5):hover .icon{
-    background: #4267B2;
+    background: #49abcb;
+    color: white;
 }
 
 .social-media .button.ig:hover{
@@ -350,6 +353,9 @@ body{
         font-size: 15px;
         font-weight: 500;
     }
+    .bar{
+        padding-left: 5px;
+    }
 } 
 
 @media screen and (max-width:750px){
@@ -372,6 +378,13 @@ body{
         text-align: center;
         font-size: 12px;
         font-weight: 500;
+    }
+    .bar{
+        padding-left: 0;
+    }
+    .me-gif{
+        visibility: hidden;
+        position: absolute;
     }
 }
 
