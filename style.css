@@ -19,7 +19,9 @@ body{
     height: 100vh;
     background: var(--body-color);
 }
-
+.hide{
+    visibility: hidden;
+}
 .container {
     padding: 0 20px;
     margin: 0 auto;
@@ -173,7 +175,7 @@ body{
 }
 
 .content-section-text {
-    font-size: 27px;
+    font-size: 20px;
     line-height: 30px;
 }
 
@@ -210,11 +212,12 @@ body{
 
 .project-image-container {
     flex-basis: 100%;
+    padding: 30px 20px 0px 20px;
 }
 
 .project-text-container {
     flex-basis: 100%;
-    padding: 10px 20px;
+    padding: 10px 20px 40px;
 }
 
 .project-image-thumbnail {
